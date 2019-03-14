@@ -7,21 +7,11 @@ export default new Router({
     routes: [
         {
             path: '/',
-            component: resolve => require(['../components/page/richTxtJS.vue'], resolve),
-            // children:[
-            //     {
-            //         path: '/',
-            //         redirect: '/test'
-            //     },
-            //     {
-            //         path: '/test',
-            //         component: resolve => require(['../components/page/Hello.vue'], resolve)
-            //     }
-            // ]
+            component: resolve => require(['../components/page/richTxtJS.vue'], resolve)
         },
         {
-            path: '/hello',
-            component: resolve => require(['../components/page/Hello.vue'], resolve),
+            path: '/canvas',
+            component: resolve => require(['../components/page/canvas.vue'], resolve)
         }
     ]
 })
